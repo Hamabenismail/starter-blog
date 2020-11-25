@@ -1,50 +1,36 @@
 ---
-title: Display Jupyter Notebooks with Academic
+title: Chaima
 subtitle: Learn how to blog in Academic using Jupyter notebooks
+date: 2019-02-05T00:00:00Z
 summary: Learn how to blog in Academic using Jupyter notebooks
+draft: false
+featured: false
 authors:
-- admin
+  - admin
+lastMod: 2019-09-05T00:00:00Z
 tags: []
 categories: []
-date: "2019-02-05T00:00:00Z"
-lastMod: "2019-09-05T00:00:00Z"
-featured: false
-draft: false
-
-# Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder. 
+projects: []
 image:
   caption: ""
   focal_point: ""
-
-# Projects (optional).
-#   Associate this post with one or more of your projects.
-#   Simply enter your project's folder or file name without extension.
-#   E.g. `projects = ["internal-project"]` references 
-#   `content/project/deep-learning/index.md`.
-#   Otherwise, set `projects = []`.
-projects: []
+  preview_only: true
+  filename: index_1_0.png
 ---
-
 ```python
 from IPython.core.display import Image
 Image('https://www.python.org/static/community_logos/python-logo-master-v3-TM-flattened.png')
 ```
 
-
-
-
 ![png](./index_1_0.png)
-
-
-
 
 ```python
 print("Welcome to Academic!")
 ```
 
-    Welcome to Academic!
-
+```
+Welcome to Academic!
+```
 
 ## Install Python and JupyterLab
 
@@ -68,7 +54,7 @@ The `jupyter` command above will launch the JupyterLab editor, allowing us to ad
 
 The first cell of your Jupter notebook will contain your post metadata ([front matter](https://sourcethemes.com/academic/docs/front-matter/)).
 
-In Jupter, choose _Markdown_ as the type of the first cell and wrap your Academic metadata in three dashes, indicating that it is YAML front matter: 
+In Jupter, choose *Markdown* as the type of the first cell and wrap your Academic metadata in three dashes, indicating that it is YAML front matter: 
 
 ```
 ---
@@ -91,6 +77,6 @@ For other tips, such as using math, see the guide on [writing content with Acade
 jupyter nbconvert index.ipynb --to markdown --NbConvertApp.output_files_dir=.
 ```
 
-## Example
+## https://jovial-aryabhata-38d85d.netlify.app/admin/#/collections/postsExample
 
 This post was created with Jupyter. The orginal files can be found at https://github.com/gcushen/hugo-academic/tree/master/exampleSite/content/post/jupyter
